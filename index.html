@@ -10,7 +10,7 @@ title: Natron
       <div class="column large-6 medium-6 small-12 center-on-small">
         <h2>Powerful<br />Open&#8209;Source<br />Compositing<br />Software</h2>
         <div class="index-hero-seperator"></div>
-        <a href="{{site.url}}/downloads" class="button"><i class='bx bxs-download'></i> Download Natron 2.3.14</a>
+        <a href="{{site.baseurl}}/downloads" class="button"><i class='bx bxs-download'></i> Download Natron 2.3.14</a>
       </div>
     </div>
   </div>
@@ -29,7 +29,7 @@ title: Natron
     <h3><i class='bx bxl-apple'></i> <i class='bx bxl-windows'></i></h3>
   </div>
   <div class="index-about-imagecontainer column large-5 medium-5 small-12">
-    <img src="{{site.url}}/img/about_imgMonitor.png" />
+    <img src="{{site.baseurl}}/img/about_imgMonitor.png" />
   </div>
 </section>
 
@@ -39,11 +39,11 @@ title: Natron
 <div class="clearfix">
 {% for features in site.categories.features reversed %}
 <div class="featbox">
-<a href="{{site.url}}{{features.url}}">
+<a href="{{site.baseurl}}{{features.url}}">
 {% if features.image %}
-<img src="{{site.url}}/img/{{features.image}}" style="width:220px;height:auto;" alt="{{features.title}}" />
+<img src="{{site.baseurl}}/img/{{features.image}}" style="width:220px;height:auto;" alt="{{features.title}}" />
 {% else %}
-<img src="{{site.url}}/img/placeholder.png" style="width:220px;height:auto;" alt="{{post.title}}" />
+<img src="{{site.baseurl}}/img/placeholder.png" style="width:220px;height:auto;" alt="{{post.title}}" />
 {% endif %}
 </a>
 <h3>{{features.title}}</h3>
@@ -57,14 +57,14 @@ title: Natron
 <div class="clearfix">
 {% for post in site.categories.news limit:10 %}
 <div class="featbox2">
-<a href="{{site.url}}{{post.url}}">
+<a href="{{site.baseurl}}{{post.url}}">
 {% if post.image %}
-<img src="{{site.url}}/img/{{post.image}}" style="width:220px;height:auto;" alt="{{post.title}}" />
+<img src="{{site.baseurl}}/img/{{post.image}}" style="width:220px;height:auto;" alt="{{post.title}}" />
 {% else %}
-<img src="{{site.url}}/img/placeholder.png" style="width:220px;height:auto;" alt="{{post.title}}" />
+<img src="{{site.baseurl}}/img/placeholder.png" style="width:220px;height:auto;" alt="{{post.title}}" />
 {% endif %}
 </a>
-<h3><a href="{{site.url}}{{post.url}}" >{{ post.title }}</a></h3>
+<h3><a href="{{site.baseurl}}{{post.url}}" >{{ post.title }}</a></h3>
 <small>{{ post.date | date: "%-d %B %Y" }}</small><br>
 {{post.description}}
 </div>

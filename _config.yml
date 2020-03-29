@@ -1,7 +1,7 @@
 title: "Natron"
 description: Open Source Compositing Software For VFX and Motion Graphics
 url: ""
-baseurl: ""
+baseurl: "/NatronGitHub.github.io"
 
 # Build settings
 sass:
