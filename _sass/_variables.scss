@@ -18,7 +18,12 @@ $natronyellow: #ffbf00;
 $titlefont: "Jost", "Futura", sans-serif;
 $bodyfont: "Noto Sans", sans-serif;
 
-// Overarching CSS
+// Typography
+
+.basic-paragraph {
+	font-family: $bodyfont;
+	line-height: 1.5rem;
+}
 
 // Buttons
 
@@ -31,7 +36,7 @@ $bodyfont: "Noto Sans", sans-serif;
 	padding-bottom: 0.5rem;
 	padding-left: 1rem;
 	padding-right: 1rem;
-	font-size: 1.3rem;
+	font-size: 1.2rem;
 	border-radius: 0.3rem;
 	min-width: 15rem;
 	text-decoration: none;
