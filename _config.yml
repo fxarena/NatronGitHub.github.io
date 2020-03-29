@@ -2,8 +2,6 @@ title: "Natron"
 description: Open Source Compositing Software For VFX and Motion Graphics
 url: ""
 baseurl: ""
-logo: https://raw.githubusercontent.com/NatronGitHub/Natron/RB-2.3/Gui/Resources/Images/natronIcon256_linux.png
-show_downloads: true
 
 # Build settings
 sass:
