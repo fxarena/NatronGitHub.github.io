@@ -1,7 +1,9 @@
 // Hero Section
 
 .index-hero {
-  background-color: $natrondarkblue;
+  background-image: url("../img/spaceship.jpg");
+  background-position: left;
+  background-origin: content-box;
   width: 100%;
   min-height: 50rem;
   border-bottom: solid;
