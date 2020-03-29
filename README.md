@@ -31,3 +31,7 @@ This is my proposed new sitemap, it's a little different from Rodlie's but I thi
 
 * Docs
   * This one is tricky.  IMO a proper docs website should probably be a different website entirely with the nav bar from this one tacked onto it.  This isn't otherworldly difficult to do and GitHub Pages makes it pretty easy to make multiple repos look like one website in the browser but that's just my opinion.
+
+## Building for development
+
+TODO
