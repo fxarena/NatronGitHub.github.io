@@ -7,7 +7,7 @@ layout: default
 <!-- display about page -->
 <p>
 {% for about in site.categories.about %}
-<img style="float:right;width:35%;height:35%;padding-left:5px;" src="{{site.url}}/images/{{about.image}}" />
+<img style="float:right;width:35%;height:35%;padding-left:5px;" src="{{site.url}}/img/{{about.image}}" />
 {{about.content}}
 {% endfor %}
 </p>
@@ -19,9 +19,9 @@ layout: default
 <div class="featbox">
 <a href="{{site.url}}{{features.url}}">
 {% if features.image %}
-<img src="{{site.url}}/images/{{features.image}}" style="width:220px;height:auto;" alt="{{features.title}}" />
+<img src="{{site.url}}/img/{{features.image}}" style="width:220px;height:auto;" alt="{{features.title}}" />
 {% else %}
-<img src="{{site.url}}/images/placeholder.png" style="width:220px;height:auto;" alt="{{post.title}}" />
+<img src="{{site.url}}/img/placeholder.png" style="width:220px;height:auto;" alt="{{post.title}}" />
 {% endif %}
 </a>
 <h3>{{features.title}}</h3>
@@ -37,9 +37,9 @@ layout: default
 <div class="featbox2">
 <a href="{{site.url}}{{post.url}}">
 {% if post.image %}
-<img src="{{site.url}}/images/{{post.image}}" style="width:220px;height:auto;" alt="{{post.title}}" />
+<img src="{{site.url}}/img/{{post.image}}" style="width:220px;height:auto;" alt="{{post.title}}" />
 {% else %}
-<img src="{{site.url}}/images/placeholder.png" style="width:220px;height:auto;" alt="{{post.title}}" />
+<img src="{{site.url}}/img/placeholder.png" style="width:220px;height:auto;" alt="{{post.title}}" />
 {% endif %}
 </a>
 <h3><a href="{{site.url}}{{post.url}}" >{{ post.title }}</a></h3>

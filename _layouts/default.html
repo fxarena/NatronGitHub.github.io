@@ -1,67 +1,18 @@
 <!DOCTYPE html>
 <html lang="{{ site.lang | default: "en-US" }}">
-  <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-{% seo %}
-    <link rel="stylesheet" href="{{ "/assets/css/style.css?v=" | append: site.github.build_revision | relative_url }}">
-    <!--[if lt IE 9]>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
-    <![endif]-->
-
-    <style>
-        body {
-      padding:0; margin:0; background-color:/*333*/#282627; 
-      background-image: url('{{ site.url }}/images/logo-bg01.png');
-      background-repeat: no-repeat; background-attachment: fixed; background-position: top left;
-    }
-    .wrapper { max-width:1280px; margin:0; padding:0; margin-left:auto; margin-right:auto;}
-    .featbox { float:left; width: 220px; padding: 15px; height: 300px; background-color: rgba(255, 255, 255, 0.05); border-radius: 10%; margin:15px;}
-    .featbox2 { float:left; width: 220px; padding: 15px; height: 350px; background-color: rgba(255, 255, 255, 0.05); border-radius: 10%; margin:15px;}
-    .featbox img, .featbox2 img { border-radius: 10%; }
-    .clearfix::after { content: ""; clear: both; display: table; }
-    section { width:auto; /*background-color:rgb(70, 69, 69);*/ margin-top: 70px;}
-    .wrapper2 {background-color: rgba(0, 0, 0, 0.596); position: fixed !important; width:100%;}
-    .wrapper2 img {margin-left: 10px;}
-    h1, h2, h3, h4, span, p, li, strong, small { color: #949496; }
-    a, a:link, a:visited, a:hover, a:active { color: #8d8d8e; font-weight: bold; }
-    a:hover { text-decoration: underline; }
-    code { color: #ababab; }
-    h2 { margin-bottom: 5px; }
-    .featbox2 h3 {margin-bottom: 5px;}
-    section { border: none; }
-    .menu { list-style-type: none; margin: 0; margin-left: 10px; padding: 0; overflow: hidden; float: right; }
-    .menu li { float: left; }
-    .menu li a { display: inline-block; color: white; text-align: center; padding: 14px 16px; text-decoration: none; font-weight: normal; }
-    .menu li a:hover { background-color: #111; }
-    .menu li .active { background-color: red; }
-    </style>
-  </head>
+  {% include head.html %}
   <body>
-    <div class="wrapper2">
-      <img src="{{site.logo | relative_url}}" alt="Logo" width="48" height="48">
-      <ul class="menu"> <!-- TEMP MENU WILL GEN AUTO WHEN DONE-->
-        <li><a href="{{site.url}}">Home</a></li>
-        <li><a href="{{site.url}}/news">News</a></li>
-        <li><a href="{{site.url}}/downloads">Downloads</a></li>
-        <li><a href="{{site.url}}/features">Features</a></li>
-        <li><a href="{{site.url}}/plugins">Plug-ins</a></li>
-        <li><a href="{{site.url}}/about">About</a></li>
-        <li><a href="{{site.url}}/documentation">Documentation</a></li>
-        <li><a href="{{site.url}}/community">Community</a></li>
-      </ul>
-    </div>
+    {% include nav.html %}
     <div class="wrapper">
       <section>
 
       {{ content }}
 
       </section>
-      <footer></footer>
+      {% include footer.html %}
+
     </div>
-    <script src="{{ "/assets/js/scale.fix.js" | relative_url }}"></script>
+    <!-- <script src="{{ "/assets/js/scale.fix.js" | relative_url }}"></script> -->
     {% if site.google_analytics %}
     <script>
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
