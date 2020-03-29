@@ -4,8 +4,10 @@
   background-image: url("../img/spaceship.jpg");
   background-position: left;
   background-origin: content-box;
+  background-attachment: fixed;
   width: 100%;
-  min-height: 50rem;
+  // min-height: 40rem;
+  padding-bottom: 5rem !important;
   border-bottom: solid;
   border-width: 0.4rem;
   border-color: $natronblue;
