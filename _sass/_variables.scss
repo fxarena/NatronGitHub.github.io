@@ -16,6 +16,7 @@ $natronblue: #2c84ec;
 $natrondarkblue: darken($natronblue,35);
 $natronyellow: #ffbf00;
 $titlefont: "Jost", "Futura", sans-serif;
+$bodyfont: "Noto Sans", sans-serif;
 
 // Overarching CSS
 
@@ -25,8 +26,7 @@ $titlefont: "Jost", "Futura", sans-serif;
 	display: inline-block;
 	background-color: $natronblue;
 	color: white;
-	font-family: $titlefont;
-	letter-spacing: 0.02rem;
+	font-family: $bodyfont;
 	padding-top: 0.6rem;
 	padding-bottom: 0.5rem;
 	padding-left: 1rem;
@@ -37,4 +37,10 @@ $titlefont: "Jost", "Futura", sans-serif;
 	text-decoration: none;
 	text-align: center;
 	box-shadow: 0 0.4rem lighten($natronblue, 10);
+}
+
+.button:active {
+	position: relative;
+	box-shadow: 0 0 rgba(0, 0, 0, 0);
+	bottom: -0.4rem;
 }
