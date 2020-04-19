@@ -4,9 +4,6 @@ nav.topnav {
   display: flex;
   align-content: space-between;
   vertical-align: middle;
-  border-bottom: solid;
-  border-width: 0.4rem;
-  border-color: $natronblue;
 }
 
 .topnav-logo {
@@ -37,6 +34,12 @@ nav.topnav {
   }
 }
 
+@media only screen and (min-width: 640px) {
+  .topnav-logo a {
+    justify-content: flex-start;
+  }
+}
+
 .topnav-list {
   list-style: none;
   display: inline-flex;
@@ -47,10 +50,9 @@ nav.topnav {
   a {
     color: darken($natronblue,30);
     text-decoration: none;
-    text-transform: lowercase;
     font-family: $bodyfont;
-    font-weight: 600;
-    font-size: 1.2rem;
+    font-weight: 400;
+    font-size: 1rem;
   }
 
   a:hover {

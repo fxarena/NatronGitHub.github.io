@@ -6,67 +6,118 @@ title: Natron
 <!-- Hero Section -->
 <section class="index-hero row">
   <div class="column large-10 medium-10 small-12 large-offset-1 medium-offset-1">
-    <div class="row">
-      <div class="column large-6 medium-6 small-12 center-on-small">
-        <h2>Powerful<br />Open&#8209;Source<br />Compositing<br />Software</h2>
-        <div class="index-hero-seperator"></div>
-        <a href="{{site.baseurl}}/downloads" class="button"><i class='bx bxs-download'></i> Download Natron 2.3.14</a>
-      </div>
-    </div>
+    <h2>Open Source Compositing<br />For VFX and Motion Graphics</h2>
+  </div>
+</section>
+
+<section class="index-belowhero row">
+  <div class="column large-10 medium-10 small-12 large-offset-1 medium-offset-1">
+    <a href="{{site.baseurl}}/downloads"><i class='bx bxs-download'></i> Download Natron 2.3.14</a>
   </div>
 </section>
 
 <!-- Brief About Section -->
 <section class="index-about row">
-  <div class="column large-5 medium-5 small-12 large-offset-1 medium-offset-1">
-    <h3>Cross-Platform?<br />No Problem.</h3>
+  <div class="index-about-info column large-5 medium-10 small-12 large-offset-1 medium-offset-1">
+    <h3>Fully Cross-Platform</h3>
     <p class="basic-paragraph">
       Natron is a node-based digital compositing suite that can handle 2D and some 2.5D tasks. It's built with robust frameworks such as OpenFX and OpenImageIO making Natron the most flexible open-source program for visual effects compositing. Powerful keying, roto, paint, and 2D tracking tools are included out of the box and Natron's interface and feature set are the same across all platforms.
       <br />
       <br />
       It's also <em>completely free</em> to use.
     </p>
-    <h3><i class='bx bxl-apple'></i> <i class='bx bxl-windows'></i></h3>
+    <h3 class="index-about-info-icons"><i class='bx bxl-apple'></i><i class='bx bxl-windows'><i class='bx bx-terminal'></i></i></h3>
   </div>
-  <div class="index-about-imagecontainer column large-5 medium-5 small-12">
+  <div class="index-about-imagecontainer column large-5 medium-10 small-12 large-offset-0 medium-offset-0 small-offset-0">
     <img src="{{site.baseurl}}/img/about_imgMonitor.png" />
   </div>
 </section>
 
 
 <!-- list all features -->
-<h2>Features</h2>
-<div class="clearfix">
-{% for features in site.categories.features reversed %}
-<div class="featbox">
-<a href="{{site.baseurl}}{{features.url}}">
-{% if features.image %}
-<img src="{{site.baseurl}}/img/{{features.image}}" style="width:220px;height:auto;" alt="{{features.title}}" />
-{% else %}
-<img src="{{site.baseurl}}/img/placeholder.png" style="width:220px;height:auto;" alt="{{post.title}}" />
-{% endif %}
-</a>
-<h3>{{features.title}}</h3>
-{{features.description}}
-</div>
-{% endfor %}
-</div>
+<section class="index-features">
+  <div class="row">
+    <div class="column large-10 medium-10 small-12 large-offset-1 medium-offset-1">
+      <h3>Features</h3>
+    </div>
+
+  </div>
+  <div class="row">
+    <div class="column large-10 medium-10 small-12 large-offset-1 medium-offset-1">
+      <ul class="index-features-card">
+        <li>
+          <img src="img/placeholder.png"/>
+          <h4>OpenColorIO</h4>
+          <p class="basic-paragraph">
+            Color management solution geared towards motion picture production with an emphasis on visual effects and computer animation.
+          </p>
+        </li>
+        <li>
+          <img src="img/placeholder.png"/>
+          <h4>OpenFX Compatible</h4>
+          <p class="basic-paragraph">
+            Natron supports OpenFX (OFX), the VFX industry standard for plug-ins.
+          </p>
+        </li>
+        <li>
+          <img src="img/placeholder.png"/>
+          <h4>Tracking</h4>
+          <p class="basic-paragraph">
+            Natron includes powerful 2D, and Planar trackers.
+          </p>
+        </li>
+        <li>
+          <img src="img/placeholder.png"/>
+          <h4>Roto</h4>
+          <p class="basic-paragraph">
+            Multi-layered rotoscoping with stroke capability.
+          </p>
+        </li>
+        <li>
+          <img src="img/placeholder.png"/>
+          <h4>Keying</h4>
+          <p class="basic-paragraph">
+            Natron offers various keying tools.
+          </p>
+        </li>
+        <li>
+          <img src="img/placeholder.png"/>
+          <h4>Curve & Dope-sheet Editors</h4>
+          <p class="basic-paragraph">
+            If you know how to use a curve editor you know how to use this one too.
+          </p>
+        </li>
+        <li>
+          <img src="img/placeholder.png"/>
+          <h4>GPU & Network Rendering</h4>
+          <p class="basic-paragraph">
+            Natron is GPU accelerated and can be integrated with render farm managers.
+          </p>
+        </li>
+        <li>
+          <img src="img/placeholder.png"/>
+          <h4>Community Plug-ins</h4>
+          <p class="basic-paragraph">
+            Natron has an ever increasing selection of community plugins.
+          </p>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+
 
 <!-- list latest news -->
-<h2>News</h2>
+<h2>The Latest</h2>
 <div class="clearfix">
-{% for post in site.categories.news limit:10 %}
-<div class="featbox2">
-<a href="{{site.baseurl}}{{post.url}}">
-{% if post.image %}
-<img src="{{site.baseurl}}/img/{{post.image}}" style="width:220px;height:auto;" alt="{{post.title}}" />
-{% else %}
-<img src="{{site.baseurl}}/img/placeholder.png" style="width:220px;height:auto;" alt="{{post.title}}" />
-{% endif %}
-</a>
-<h3><a href="{{site.baseurl}}{{post.url}}" >{{ post.title }}</a></h3>
-<small>{{ post.date | date: "%-d %B %Y" }}</small><br>
-{{post.description}}
-</div>
-{% endfor %}
+  {% for post in site.categories.news limit:1 %}
+  <div class="featbox2">
+    <a href="{{site.baseurl}}{{post.url}}">
+    </a>
+    <h3><a href="{{site.baseurl}}{{post.url}}">{{ post.title }}</a></h3>
+    <small>{{ post.date | date: "%-d %B %Y" }}</small><br>
+    {{post.description}}
+  </div>
+  {% endfor %}
 </div>
