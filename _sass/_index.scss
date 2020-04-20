@@ -28,12 +28,6 @@
   }
 }
 
-// Below Hero Download Section
-
-.index-belowhero {
-  min-height: 5rem;
-}
-
 // Brief About Section
 .index-about {
   min-height: 35rem;
@@ -43,6 +37,7 @@
   background-color: $natronblue;
   min-height: 45rem;
   padding: 5rem;
+  margin-top: 5rem;
 
   h3 {
     color: $natronyellow;
@@ -72,6 +67,7 @@
   justify-content: center;
   align-items: center;
   min-height: 35rem;
+  margin-top: 5rem;
 
   img {
     margin-top: 4rem;
