@@ -12,7 +12,7 @@ title: Natron
 
 <section class="index-belowhero row">
   <div class="column large-10 medium-10 small-12 large-offset-1 medium-offset-1">
-    <a href="{{site.baseurl}}/downloads"><i class='bx bxs-download'></i> Download Natron 2.3.14</a>
+    <a href="{{site.baseurl}}/downloads"><i class='bx bx-download' ></i>Get Natron</a>
   </div>
 </section>
 
@@ -26,7 +26,7 @@ title: Natron
       <br />
       It's also <em>completely free</em> to use.
     </p>
-    <h3 class="index-about-info-icons"><i class='bx bxl-apple'></i><i class='bx bxl-windows'><i class='bx bx-terminal'></i></i></h3>
+    <h3 class="index-about-info-icons"><i class='bx bxl-apple'></i><i class='bx bxl-windows'></i><i class='bx bx-terminal'></i></h3>
   </div>
   <div class="index-about-imagecontainer column large-5 medium-10 small-12 large-offset-0 medium-offset-0 small-offset-0">
     <img src="{{site.baseurl}}/img/about_imgMonitor.png" />
@@ -34,90 +34,145 @@ title: Natron
 </section>
 
 
-<!-- list all features -->
+<!-- Feature List -->
 <section class="index-features">
   <div class="row">
     <div class="column large-10 medium-10 small-12 large-offset-1 medium-offset-1">
       <h3>Features</h3>
     </div>
-
   </div>
   <div class="row">
-    <div class="column large-10 medium-10 small-12 large-offset-1 medium-offset-1">
+    <div class="column large-8 medium-10 small-12 large-offset-2 medium-offset-1">
       <ul class="index-features-card">
         <li>
-          <img src="img/placeholder.png"/>
-          <h4>OpenColorIO</h4>
-          <p class="basic-paragraph">
-            Color management solution geared towards motion picture production with an emphasis on visual effects and computer animation.
-          </p>
+          <div>
+            <object type="image/svg+xml" data="{{"/img/index-feature-cards/openfx.svg" | prepend: site.baseurl }}"></object>
+            <div class="index-features-title">
+              <h4>OpenFX Plugin Support</h4>
+            </div>
+            <p class="basic-paragraph">
+              Natron supports industry standard OFX plug-ins.
+            </p>
+          </div>
         </li>
         <li>
-          <img src="img/placeholder.png"/>
-          <h4>OpenFX Compatible</h4>
-          <p class="basic-paragraph">
-            Natron supports OpenFX (OFX), the VFX industry standard for plug-ins.
-          </p>
+          <div>
+            <object type="image/svg+xml" data="{{"/img/index-feature-cards/tracking.svg" | prepend: site.baseurl }}"></object>
+            <div class="index-features-title">
+              <h4>Tracking</h4>
+            </div>
+            <p class="basic-paragraph">
+              Natron includes powerful 2D, and Planar trackers.
+            </p>
+          </div>
         </li>
         <li>
-          <img src="img/placeholder.png"/>
-          <h4>Tracking</h4>
-          <p class="basic-paragraph">
-            Natron includes powerful 2D, and Planar trackers.
-          </p>
+          <div>
+            <object type="image/svg+xml" data="{{"/img/index-feature-cards/roto.svg" | prepend: site.baseurl }}"></object>
+            <div class="index-features-title">
+              <h4>Roto</h4>
+            </div>
+            <p class="basic-paragraph">
+              Multi-layered rotoscoping with stroke capability.
+            </p>
+          </div>
         </li>
         <li>
-          <img src="img/placeholder.png"/>
-          <h4>Roto</h4>
-          <p class="basic-paragraph">
-            Multi-layered rotoscoping with stroke capability.
-          </p>
+          <div>
+            <object type="image/svg+xml" data="{{"/img/index-feature-cards/keyer.svg" | prepend: site.baseurl }}"></object>
+            <div class="index-features-title">
+              <h4>Keying</h4>
+            </div>
+            <p class="basic-paragraph">
+              Natron offers various keying tools.
+            </p>
+          </div>
         </li>
         <li>
-          <img src="img/placeholder.png"/>
-          <h4>Keying</h4>
-          <p class="basic-paragraph">
-            Natron offers various keying tools.
-          </p>
+          <div>
+            <object type="image/svg+xml" data="{{"/img/index-feature-cards/dopesheet.svg" | prepend: site.baseurl }}"></object>
+            <div class="index-features-title">
+              <h4>Curve & Dope-sheet Editors</h4>
+            </div>
+            <p class="basic-paragraph">
+              If you've used a curve editor before you know how to use this one too.
+            </p>
+          </div>
         </li>
         <li>
-          <img src="img/placeholder.png"/>
-          <h4>Curve & Dope-sheet Editors</h4>
-          <p class="basic-paragraph">
-            If you know how to use a curve editor you know how to use this one too.
-          </p>
-        </li>
-        <li>
-          <img src="img/placeholder.png"/>
-          <h4>GPU & Network Rendering</h4>
-          <p class="basic-paragraph">
-            Natron is GPU accelerated and can be integrated with render farm managers.
-          </p>
-        </li>
-        <li>
-          <img src="img/placeholder.png"/>
-          <h4>Community Plug-ins</h4>
-          <p class="basic-paragraph">
-            Natron has an ever increasing selection of community plugins.
-          </p>
+          <div>
+            <object type="image/svg+xml" data="{{"/img/index-feature-cards/gpu.svg" | prepend: site.baseurl }}"></object>
+            <div class="index-features-title">
+              <h4>GPU & Network Rendering</h4>
+            </div>
+            <p class="basic-paragraph">
+              Natron is GPU accelerated and can be integrated with render farm managers.
+            </p>
+          </div>
         </li>
       </ul>
     </div>
   </div>
 </section>
 
-
-
-<!-- list latest news -->
-<h2>The Latest</h2>
-<div class="clearfix">
-  {% for post in site.categories.news limit:1 %}
-  <div class="featbox2">
-    <a href="{{site.baseurl}}{{post.url}}">
-    </a>
-    <h3><a href="{{site.baseurl}}{{post.url}}">{{ post.title }}</a></h3>
-    <small>{{ post.date | date: "%-d %B %Y" }}</small><br>
-    {{post.description}}
+<!-- Latest News -->
+<section class="row">
+  <div class="index-news column large-10 medium-10 small-12 large-offset-1 medium-offset-1">
+    <h3>The Latest</h3>
+    <div class="index-newspost">
+      {% for post in site.posts limit:2 %}
+      <div>
+        <a href="{{site.baseurl}}{{post.url}}">
+        </a>
+        <a href="{{site.baseurl}}{{post.url}}"><h4>{{ post.title }}</h4></a>
+        <p class="basic-paragraph">
+          {{ post.date | date: "%-d %B %Y" }}
+        </p>
+        <p class="basic-paragraph">
+          {{post.description}}
+        </p>
+      </div>
+      {% endfor %}
+    </div>
   </div>
-  {% endfor %}
-</div>
+</section>
+
+<!-- Download & Get Involved -->
+<!-- These links are set up to download the latest version from GitHub as long as a release post (with the category of "release") has been added with the applicable version number. -->
+<section class="index-downloadsection row">
+  <div class="index-download column large-5 medium-10 small-12 large-offset-1 medium-offset-1">
+    <h3>Download Natron</h3>
+    <h4>Version {% for post in site.categories.release limit:1 %}{{post.version}}{% endfor %}</h4>
+    <div class="index-download-box">
+      <h5><i class='bx bxl-apple'></i> MacOS</h5>
+      <a class="hyperlink-inverted" href="https://github.com/NatronGitHub/Natron/releases/latest/download/Natron-{% for post in site.categories.release limit:1 %}{{post.version}}{% endfor %}.dmg"><i class='bx bxs-component'></i> DMG Installer</a>
+
+      <h5><i class='bx bxl-windows'></i> Windows</h5>
+      <a class="hyperlink-inverted" href="https://github.com/NatronGitHub/Natron/releases/latest/download/Natron-{% for post in site.categories.release limit:1 %}{{post.version}}{% endfor %}-Windows-x86_32bit-setup.exe"><i class='bx bxs-component'></i> 32 Bit Installer</a>
+      <a class="hyperlink-inverted" href="https://github.com/NatronGitHub/Natron/releases/latest/download/Natron-{% for post in site.categories.release limit:1 %}{{post.version}}{% endfor %}-Windows-x86_64bit-setup.exe"><i class='bx bxs-component'></i> 64 Bit Installer</a>
+      <br />
+      <a class="hyperlink-inverted" href="https://github.com/NatronGitHub/Natron/releases/latest/download/Natron-{% for post in site.categories.release limit:1 %}{{post.version}}{% endfor %}-Windows-x86_32bit-no-installer.zip"><i class='bx bxs-component'></i> 32 Bit Portable</a>
+      <a class="hyperlink-inverted" href="https://github.com/NatronGitHub/Natron/releases/latest/download/Natron-{% for post in site.categories.release limit:1 %}{{post.version}}{% endfor %}-Windows-x86_64bit-no-installer.zip"><i class='bx bxs-component'></i> 64 Bit Portable</a>
+
+      <h5><i class='bx bx-terminal'></i> Linux</h5>
+      <a class="hyperlink-inverted" href="https://github.com/NatronGitHub/Natron/releases/latest/download/Natron-{% for post in site.categories.release limit:1 %}{{post.version}}{% endfor %}-Linux-x86_32bit.tgz"><i class='bx bxs-component'></i> 32 Bit Installer</a>
+      <a class="hyperlink-inverted" href="https://github.com/NatronGitHub/Natron/releases/latest/download/Natron-{% for post in site.categories.release limit:1 %}{{post.version}}{% endfor %}-Linux-x86_64bit.tgz"><i class='bx bxs-component'></i> 64 Bit Installer</a>
+      <br />
+      <a class="hyperlink-inverted" href="https://github.com/NatronGitHub/Natron/releases/latest/download/Natron-{% for post in site.categories.release limit:1 %}{{post.version}}{% endfor %}-Linux-x86_32bit-portable.tar.xz"><i class='bx bxs-component'></i> 32 Bit Portable</a>
+      <a class="hyperlink-inverted" href="https://github.com/NatronGitHub/Natron/releases/latest/download/Natron-{% for post in site.categories.release limit:1 %}{{post.version}}{% endfor %}-Linux-x86_64bit-portable.tar.xz"><i class='bx bxs-component'></i> 64 Bit Portable</a>
+
+      <h5><i class='bx bx-code-alt' ></i></i> Source Code</h5>
+      <a class="hyperlink-inverted" href="https://github.com/NatronGitHub/Natron/archive/v{% for post in site.categories.release limit:1 %}{{post.version}}{% endfor %}.zip"><i class='bx bxs-component'></i> .zip</a>
+      <a class="hyperlink-inverted" href="https://github.com/NatronGitHub/Natron/archive/v{% for post in site.categories.release limit:1 %}{{post.version}}{% endfor %}.tar.gz"><i class='bx bxs-component'></i> .tar.gz</a>
+    </div>
+  </div>
+  <div class="index-getinvolved column large-5 medium-10 small-12 large-offset-0 medium-offset-0 small-offset-0">
+    <h3>Get Involved</h3>
+    <p class="basic-paragraph">
+      Natron is currently looking for maintainers and contributors!  Instructions for contributing are available <a class="hyperlink-inverted" href="https://github.com/NatronGitHub/Natron/#contributing">on our GitHub</a>, we accept and review pull requests.
+    </p>
+    <div class="index-bigicon">
+      <i class='bx bx-git-pull-request'></i>
+    </div>
+  </div>
+</section>

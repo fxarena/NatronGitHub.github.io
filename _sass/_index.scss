@@ -18,14 +18,6 @@
     margin-bottom: 10rem;
     position: relative;
     z-index: 2;
-    text-shadow:-0.5px 0.5px $natronblue,
-                -1px 1px $natronblue,
-                -1.5px 1.5px $natronblue,
-                -2px 2px $natronblue,
-                -2.5px 2.5px $natronblue,
-                -3px 3px $natronblue,
-                -3.5px 3.5px $natronblue,
-                -4px 4px $natronblue,
   }
 
   a {
@@ -57,12 +49,12 @@
     font-family: $titlefont;
     font-size: 4rem;
     margin-bottom: 0;
-    padding: 0 2rem 2rem 2rem;
+    padding: 0 2vw 2rem 2vw;
   }
 
   p {
     color: white;
-    padding: 0 2rem 0 2rem;
+    padding: 0 2vw 0 2vw;
   }
 
   .index-about-info-icons {
@@ -82,48 +74,192 @@
   min-height: 35rem;
 
   img {
-    width: calc(80% * 2vw);
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+    padding-left: 2vw;
+    padding-right: 2vw;
   }
 }
+
+// Hack because basicgrid is broken and doesn't like when offsets are zero for bigger sizes but not smaller ones
+// this may be removed in the future
+@media only screen and (min-width: 640px) {
+  .index-about-imagecontainer, .index-getinvolved {
+    margin-left: 8.3333333333%;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .index-about-imagecontainer, .index-getinvolved {
+    margin-left: 0;
+  }
+}
+
+
 // Feature cards
 
 .index-features {
   background-color: white;
 
   h3 {
-    color: $natronblue;
+    color: $natronred;
     font-family: $titlefont;
     font-size: 4rem;
-    padding: 0 1.5rem 0 1.5rem;
+    text-align: center;
   }
 
   ul {
     list-style: none;
     margin: 0;
-    padding: 0;
+    padding: 0 0 6rem 0;
     width: 100%;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, 1fr);
     grid-column-gap: 0.5rem;
     grid-row-gap: 0.5rem;
   }
 
+  @media only screen and (max-width: 640px) {
+    ul {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
   li {
     margin: 1rem;
-    max-width: 20rem;
-    transition-duration: 0.3s;
+    display: flex;
+    justify-content: center;
+  }
+
+  object {
+    width: 6rem;
+  }
+
+  .index-features-title {
+    padding-top: 0.5rem;
+    margin-bottom: -0.8rem;
   }
 
   h4 {
+    display: inline;
     font-family: $titlefont;
     font-size: 1.2rem;
-    margin-top: 0.5rem;
-    margin-bottom: -0.6rem;
     color: black;
   }
 
-  img {
-    width: 100%;
+  p {
+    max-width: 15rem;
+  }
+
+}
+
+// Latest News
+
+.index-news {
+  background-color: #ebebeb;
+  min-height: 45rem;
+
+  h3 {
+    color: $natrongreen;
+    font-family: $titlefont;
+    font-size: 4rem;
+    margin-bottom: 0;
+    padding: 0 2vw 2rem 2vw;
+  }
+}
+
+.index-newspost {
+  padding: 0 2vw 0 2vw;
+
+  a {
+    text-decoration: none;
+  }
+
+  h4 {
+    color: $natronblue;
+    font-family: $titlefont;
+    font-size: 2rem;
+    margin-bottom: 0;
+  }
+}
+
+// Download & Get Involved
+
+.index-downloadsection {
+  h3 {
+    color: $natronyellow;
+    font-family: $titlefont;
+    font-size: 4rem;
+    margin-bottom: 0;
+    padding: 0 2vw 2rem 2vw;
+  }
+
+  p {
+    color: white;
+    padding: 0 2vw 0 2vw;
+  }
+}
+
+.index-download {
+  background-color: #36373b;
+  min-height: 45rem;
+  padding: 5rem;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+
+  h3 {
+    color: $natronblue;
+  }
+
+  h4 {
+    color: white;
+    font-family: $titlefont;
+    font-size: 2rem;
+    margin-top: -1.5rem;
+    margin-bottom: 0rem;
+    padding: 0 2vw 0 2vw;
+  }
+
+  i {
+    color: $natronyellow;
+  }
+
+  h5 {
+    color: white;
+    font-family: $titlefont;
+    font-size: 1.5rem;
+    padding: 0 2vw 0 2vw;
+    margin-bottom: 0.5rem;
+    margin-top: 2rem;
+  }
+
+  a {
+    font-family: $bodyfont;
+    padding: 0 2vw 0 2vw;
+    line-height: 2rem;
+  }
+}
+
+.index-download-box {
+  margin-bottom: 6rem;
+}
+
+.index-getinvolved {
+  background-color: $natronred;
+  min-height: 45rem;
+  padding: 5rem;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+}
+
+.index-bigicon {
+  display: flex;
+  justify-content: center;
+  padding: 5rem;
+
+  i {
+    color: $natronyellow;
+    padding-top: 2rem;
+    font-size: 10rem;
   }
 }
