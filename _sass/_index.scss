@@ -96,18 +96,20 @@
 
 .index-features {
   background-color: white;
+  margin-top: 5rem;
 
   h3 {
     color: $natronred;
     font-family: $titlefont;
     font-size: 4rem;
     text-align: center;
+    margin-top: 0;
+    margin-bottom: 4rem;
   }
 
   ul {
     list-style: none;
     margin: 0;
-    padding: 0 0 6rem 0;
     width: 100%;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -152,6 +154,7 @@
 // Latest News
 
 .index-news {
+  margin-top: 5rem;
   background-color: #ebebeb;
   min-height: 45rem;
 
