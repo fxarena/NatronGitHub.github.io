@@ -1,5 +1,34 @@
 footer {
-  min-height: 20rem;
+  min-height: 25rem;
   background-color: $natronblue;
   margin-top: 5rem !important;
+}
+
+@media only screen and (max-width: 640px) {
+  footer {
+    text-align: center;
+  }
+}
+
+.footer-title {
+  font-family: $titlefont;
+  color: $natronyellow;
+  font-size: 2rem;
+  margin: 2rem 0 2rem 0;
+}
+
+.footer-list {
+  font-family: $bodyfont;
+  list-style: none;
+  margin: 0;
+  padding: 0 0 2rem 0;
+
+  li {
+    margin: 0.4rem 0 0 0;
+    font-size: 1.2rem;
+  }
+
+  i {
+    padding-right: 0.5rem;
+  }
 }

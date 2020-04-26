@@ -116,10 +116,11 @@ title: Natron
     <div class="index-newspost">
       {% for post in site.posts limit:4 %}
       <div>
-        <a href="{{site.baseurl}}{{post.url}}"><h4><i class='bx bx-news'></i> {{ post.title }}</h4></a>
+        <h4><i class='bx bx-news'></i> {{ post.title }}</h4>
         <p class="index-news-date">
           Posted on {{ post.date | date: "%B %-d, %Y" }} by {{ post.author }}
         </p>
+        <a class="index-news-link" href="{{site.baseurl}}{{post.url}}">Read more<i class='bx bx-right-arrow-alt' ></i></a>
       </div>
       {% endfor %}
     </div>
@@ -161,7 +162,7 @@ title: Natron
   <div class="index-getinvolved column large-5 medium-10 small-12 large-offset-0 medium-offset-0 small-offset-0">
     <h3>Get Involved</h3>
     <p class="basic-paragraph">
-      Natron is currently looking for maintainers and contributors! Instructions for contributing are available <a class="hyperlink-inverted" href="https://github.com/NatronGitHub/Natron/#contributing">on our GitHub</a>, we accept and review pull requests.
+      Natron is currently looking for maintainers and contributors! Instructions for building Natron yourself and contributing are available <a class="hyperlink-inverted" href="https://github.com/NatronGitHub/Natron/#contributing">on our GitHub</a>, we accept and review pull requests.
     </p>
     <h3>Join The Forum</h3>
     <p class="basic-paragraph">
