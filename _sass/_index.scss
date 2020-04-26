@@ -79,15 +79,15 @@
 }
 
 // Hack because basicgrid is broken and doesn't like when offsets are zero for bigger sizes but not smaller ones
-// this may be removed in the future
+// this may be removed in the future should basicgrid be fixed
 @media only screen and (min-width: 640px) {
-  .index-about-imagecontainer, .index-getinvolved {
+  .index-about-imagecontainer, .index-news-imagecontainer, .index-getinvolved, {
     margin-left: 8.3333333333%;
   }
 }
 
 @media only screen and (min-width: 1024px) {
-  .index-about-imagecontainer, .index-getinvolved {
+  .index-about-imagecontainer, .index-news-imagecontainer, .index-getinvolved {
     margin-left: 0;
   }
 }
@@ -111,6 +111,7 @@
   ul {
     list-style: none;
     margin: 0;
+    padding: 0;
     width: 100%;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -155,21 +156,20 @@
 // Latest News
 
 .index-news {
-  margin-top: 5rem;
   background-color: #ebebeb;
   min-height: 45rem;
+  margin-top: 5rem;
 
   h3 {
     color: $natronred;
     font-family: $titlefont;
     font-size: 4rem;
-    margin-bottom: 0;
-    padding: 0 2vw 2rem 2vw;
+    padding: 0 2vw 0 2vw;
   }
 }
 
 .index-newspost {
-  padding: 0 2vw 0 2vw;
+  padding: 0 2vw 0 2.2vw;
 
   a {
     text-decoration: none;
@@ -180,6 +180,42 @@
     font-family: $titlefont;
     font-size: 2rem;
     margin-bottom: 0;
+    margin-top: 2rem;
+  }
+
+  i {
+    color: #36373b;
+    vertical-align: -0.2rem;
+
+  }
+
+  h4:hover {
+    color: lighten($natronblue, 10);
+  }
+
+  .index-news-date {
+    margin-top: 0.5rem;
+    font-family: $bodyfont;
+    color: #36373b;
+    font-size: 0.9rem;
+    padding-left: 2.5rem;
+  }
+}
+
+.index-news-imagecontainer {
+  background-color: #ebebeb;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 45rem;
+  margin-top: 5rem;
+  padding: 0 !important;
+
+  img {
+    display: block;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
   }
 }
 
@@ -221,6 +257,7 @@
 
   i {
     color: $natronyellow;
+    vertical-align: -0.08rem;
   }
 
   h5 {
@@ -248,16 +285,4 @@
   min-height: 45rem;
   padding: 5rem;
   margin-top: 5rem;
-}
-
-.index-bigicon {
-  display: flex;
-  justify-content: center;
-  padding: 5rem;
-
-  i {
-    color: $natronyellow;
-    padding-top: 2rem;
-    font-size: 10rem;
-  }
 }

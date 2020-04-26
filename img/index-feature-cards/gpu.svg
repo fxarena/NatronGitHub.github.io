@@ -4,45 +4,42 @@
 	 viewBox="0 0 113.4 113.4" style="enable-background:new 0 0 113.4 113.4;" xml:space="preserve">
 <style type="text/css">
 	.st0{fill:none;stroke:#477EC0;stroke-width:4;stroke-miterlimit:10;}
+	.st1{fill:none;stroke:#FDBE13;stroke-width:4;stroke-miterlimit:10;}
 </style>
-<g id="Layer_2_1_">
-	<g id="Layer_1-2">
-		<rect x="9.5" y="19.5" class="st0" width="11.2" height="11.2"/>
-		<rect x="20.7" y="19.5" class="st0" width="11.2" height="11.2"/>
-		<rect x="31.9" y="19.5" class="st0" width="11.2" height="11.2"/>
-		<rect x="50.3" y="19.5" class="st0" width="11.2" height="11.2"/>
-		<rect x="61.5" y="19.5" class="st0" width="11.2" height="11.2"/>
-		<rect x="72.7" y="19.5" class="st0" width="11.2" height="11.2"/>
-		<rect x="9.5" y="30.7" class="st0" width="11.2" height="11.2"/>
-		<rect x="20.7" y="30.7" class="st0" width="11.2" height="11.2"/>
-		<rect x="31.9" y="30.7" class="st0" width="11.2" height="11.2"/>
-		<rect x="50.3" y="30.7" class="st0" width="11.2" height="11.2"/>
-		<rect x="61.5" y="30.7" class="st0" width="11.2" height="11.2"/>
-		<rect x="72.7" y="30.7" class="st0" width="11.2" height="11.2"/>
-		<rect x="9.5" y="41.9" class="st0" width="11.2" height="11.2"/>
-		<rect x="20.7" y="41.9" class="st0" width="11.2" height="11.2"/>
-		<rect x="31.9" y="41.9" class="st0" width="11.2" height="11.2"/>
-		<rect x="50.3" y="41.9" class="st0" width="11.2" height="11.2"/>
-		<rect x="61.5" y="41.9" class="st0" width="11.2" height="11.2"/>
-		<rect x="72.7" y="41.9" class="st0" width="11.2" height="11.2"/>
-		<rect x="9.5" y="60.3" class="st0" width="11.2" height="11.2"/>
-		<rect x="20.7" y="60.3" class="st0" width="11.2" height="11.2"/>
-		<rect x="31.9" y="60.3" class="st0" width="11.2" height="11.2"/>
-		<rect x="50.3" y="60.3" class="st0" width="11.2" height="11.2"/>
-		<rect x="61.5" y="60.3" class="st0" width="11.2" height="11.2"/>
-		<rect x="72.7" y="60.3" class="st0" width="11.2" height="11.2"/>
-		<rect x="9.5" y="71.5" class="st0" width="11.2" height="11.2"/>
-		<rect x="20.7" y="71.5" class="st0" width="11.2" height="11.2"/>
-		<rect x="31.9" y="71.5" class="st0" width="11.2" height="11.2"/>
-		<rect x="50.3" y="71.5" class="st0" width="11.2" height="11.2"/>
-		<rect x="61.5" y="71.5" class="st0" width="11.2" height="11.2"/>
-		<rect x="72.7" y="71.5" class="st0" width="11.2" height="11.2"/>
-		<rect x="9.5" y="82.7" class="st0" width="11.2" height="11.2"/>
-		<rect x="20.7" y="82.7" class="st0" width="11.2" height="11.2"/>
-		<rect x="31.9" y="82.7" class="st0" width="11.2" height="11.2"/>
-		<rect x="50.3" y="82.7" class="st0" width="11.2" height="11.2"/>
-		<rect x="61.5" y="82.7" class="st0" width="11.2" height="11.2"/>
-		<rect x="72.7" y="82.7" class="st0" width="11.2" height="11.2"/>
-	</g>
-</g>
+<rect x="9.5" y="19.5" class="st0" width="11.2" height="11.2"/>
+<rect x="20.7" y="19.5" class="st0" width="11.2" height="11.2"/>
+<rect x="31.9" y="19.5" class="st0" width="11.2" height="11.2"/>
+<rect x="50.3" y="19.5" class="st0" width="11.2" height="11.2"/>
+<rect x="61.5" y="19.5" class="st0" width="11.2" height="11.2"/>
+<rect x="72.7" y="19.5" class="st0" width="11.2" height="11.2"/>
+<rect x="9.5" y="30.7" class="st0" width="11.2" height="11.2"/>
+<rect x="20.7" y="30.7" class="st0" width="11.2" height="11.2"/>
+<rect x="31.9" y="30.7" class="st0" width="11.2" height="11.2"/>
+<rect x="50.3" y="30.7" class="st0" width="11.2" height="11.2"/>
+<rect x="61.5" y="30.7" class="st0" width="11.2" height="11.2"/>
+<rect x="72.7" y="30.7" class="st0" width="11.2" height="11.2"/>
+<rect x="9.5" y="41.9" class="st0" width="11.2" height="11.2"/>
+<rect x="20.7" y="41.9" class="st0" width="11.2" height="11.2"/>
+<rect x="31.9" y="41.9" class="st0" width="11.2" height="11.2"/>
+<rect x="50.3" y="41.9" class="st0" width="11.2" height="11.2"/>
+<rect x="61.5" y="41.9" class="st0" width="11.2" height="11.2"/>
+<rect x="72.7" y="41.9" class="st0" width="11.2" height="11.2"/>
+<rect x="9.5" y="60.3" class="st1" width="11.2" height="11.2"/>
+<rect x="20.7" y="60.3" class="st1" width="11.2" height="11.2"/>
+<rect x="31.9" y="60.3" class="st1" width="11.2" height="11.2"/>
+<rect x="50.3" y="60.3" class="st0" width="11.2" height="11.2"/>
+<rect x="61.5" y="60.3" class="st0" width="11.2" height="11.2"/>
+<rect x="72.7" y="60.3" class="st0" width="11.2" height="11.2"/>
+<rect x="9.5" y="71.5" class="st1" width="11.2" height="11.2"/>
+<rect x="20.7" y="71.5" class="st1" width="11.2" height="11.2"/>
+<rect x="31.9" y="71.5" class="st1" width="11.2" height="11.2"/>
+<rect x="50.3" y="71.5" class="st0" width="11.2" height="11.2"/>
+<rect x="61.5" y="71.5" class="st0" width="11.2" height="11.2"/>
+<rect x="72.7" y="71.5" class="st0" width="11.2" height="11.2"/>
+<rect x="9.5" y="82.7" class="st1" width="11.2" height="11.2"/>
+<rect x="20.7" y="82.7" class="st1" width="11.2" height="11.2"/>
+<rect x="31.9" y="82.7" class="st1" width="11.2" height="11.2"/>
+<rect x="50.3" y="82.7" class="st0" width="11.2" height="11.2"/>
+<rect x="61.5" y="82.7" class="st0" width="11.2" height="11.2"/>
+<rect x="72.7" y="82.7" class="st0" width="11.2" height="11.2"/>
 </svg>
