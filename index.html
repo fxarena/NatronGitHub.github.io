@@ -7,6 +7,9 @@ title: Natron
 <section class="index-hero row">
   <div class="column large-10 medium-10 small-12 large-offset-1 medium-offset-1">
     <h2>Open Source Compositing<br />For VFX and Motion Graphics</h2>
+    <a href="#download" class="button">
+      <i class='bx bxs-download' ></i>Download Natron
+    </a>
   </div>
 </section>
 
@@ -133,7 +136,7 @@ title: Natron
 <!-- Download & Get Involved -->
 <!-- These links are set up to download the latest version from GitHub as long as a release post (with the category of "release") has been added with the applicable version number. -->
 <section class="index-downloadsection row">
-  <div class="index-download column large-5 medium-10 small-12 large-offset-1 medium-offset-1">
+  <div id="download" class="index-download column large-5 medium-10 small-12 large-offset-1 medium-offset-1">
     <h3>Download Natron</h3>
     <h4>Version {% for post in site.categories.release limit:1 %}{{post.version}}{% endfor %}</h4>
     <div class="index-download-box">

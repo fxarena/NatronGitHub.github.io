@@ -16,6 +16,7 @@ $natronblue: #2c84ec;
 $natrondarkblue: darken($natronblue,35);
 $natronred: #dc1f26;
 $natronyellow: #ffbf00;
+$natrongrey: #36373b;
 $titlefont: 'Barlow', sans-serif;
 $bodyfont: "Noto Sans", sans-serif;
 
@@ -56,23 +57,33 @@ a.hyperlink-inverted:hover {
 
 .button {
 	display: inline-block;
-	background-color: $natronblue;
+	background-color: $natrongrey;
 	color: white;
 	font-family: $bodyfont;
+	font-size: 1.2rem !important;
 	padding-top: 0.6rem;
 	padding-bottom: 0.5rem;
 	padding-left: 1rem;
 	padding-right: 1rem;
-	font-size: 1.2rem;
-	border-radius: 0.3rem;
 	min-width: 15rem;
 	text-decoration: none;
 	text-align: center;
-	box-shadow: 0 0.4rem lighten($natronblue, 10);
+	box-shadow: 0 0.2rem darken($natrongrey, 5);
+
+	i {
+		vertical-align: -0.1rem;
+		padding-right: 1rem;
+		color: $natronyellow;
+	}
+}
+
+.button:hover {
+	background-color: lighten($natrongrey, 5);
+	box-shadow: 0 0.2rem $natrongrey;
 }
 
 .button:active {
 	position: relative;
 	box-shadow: 0 0 rgba(0, 0, 0, 0);
-	bottom: -0.4rem;
+	bottom: -0.2rem;
 }

@@ -15,7 +15,7 @@
     font-family: $titlefont;
     font-size: 4rem;
     margin-top: calc(2rem + 4vw);
-    margin-bottom: 10rem;
+    margin-bottom: 5rem;
     position: relative;
     z-index: 2;
   }
@@ -257,7 +257,7 @@
 }
 
 .index-download {
-  background-color: #36373b;
+  background-color: $natrongrey;
   min-height: 45rem;
   padding: 5rem;
   margin-top: 5rem;
