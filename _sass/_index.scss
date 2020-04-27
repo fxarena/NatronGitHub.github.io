@@ -176,7 +176,7 @@
   }
 
   h4 {
-    color: $natronblue;
+    color: $natronred;
     font-family: $titlefont;
     font-size: 2rem;
     margin-bottom: 0;
@@ -186,16 +186,17 @@
   i {
     color: #36373b;
     vertical-align: -0.2rem;
+    margin-right: 0.2rem;
 
   }
 
   .index-news-date {
-    margin-top: 0.5rem;
-    margin-bottom: 0.5rem;
+    margin-top: 0.2rem;
+    margin-bottom: 0.6rem;
     font-family: $bodyfont;
     color: #36373b;
     font-size: 0.9rem;
-    padding-left: 2.5rem;
+    padding-left: 2.7rem;
   }
 }
 
@@ -203,8 +204,8 @@
   font-family: $bodyfont;
   font-size: 1.1rem;
   margin-top: 0;
-  margin-left: 2.5rem;
-  color: $natrondarkblue;
+  margin-left: 2.7rem;
+  color: $natronblue;
 
   i {
     transition-duration: 0.1s;
@@ -214,7 +215,7 @@
 }
 
 .index-news-link:hover {
-  color: $natronblue;
+  color: lighten($natronblue, 10);
 
   i {
     transition-duration: 0.1s;

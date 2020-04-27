@@ -24,7 +24,8 @@ $bodyfont: "Noto Sans", sans-serif;
 
 .basic-paragraph {
 	font-family: $bodyfont;
-	line-height: 1.5rem;
+	line-height: 1.6rem;
+	font-size: 1.1rem;
 }
 
 a.hyperlink {
@@ -69,6 +70,7 @@ a.hyperlink-inverted:hover {
 	text-decoration: none;
 	text-align: center;
 	box-shadow: 0 0.2rem darken($natrongrey, 5);
+	transition-duration: 0.1s;
 
 	i {
 		vertical-align: -0.1rem;
@@ -80,6 +82,7 @@ a.hyperlink-inverted:hover {
 .button:hover {
 	background-color: lighten($natrongrey, 5);
 	box-shadow: 0 0.2rem $natrongrey;
+	transition-duration: 0.1s;
 }
 
 .button:active {
