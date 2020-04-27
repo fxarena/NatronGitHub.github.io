@@ -202,7 +202,7 @@
 
 .index-news-link {
   font-family: $bodyfont;
-  font-size: 1.1rem;
+  font-size: 1rem;
   margin-top: 0;
   margin-left: 2.7rem;
   color: $natronblue;
@@ -293,7 +293,8 @@
   a {
     font-family: $bodyfont;
     padding: 0 2vw 0 2vw;
-    line-height: 2rem;
+    line-height: 2.2rem;
+    font-size: 0.9rem;
   }
 }
 
