@@ -1,10 +1,6 @@
 # Open Source Compositing Software For VFX and Motion Graphics
 
-## Natron Website Source (WIP)
-
-**NOTICE! The first line in this document is the site title, DO NOT REMOVE!**
-
-## Sitemap
+## Proposed sitemap
 
 This is my proposed new sitemap, it's a little different from Rodlie's but I think it's good.... feedback is appreciated! -Hank
 
@@ -25,13 +21,22 @@ This is my proposed new sitemap, it's a little different from Rodlie's but I thi
     * Sponsorship information
     * How to contribute to development
 
-* Downloads
-  * `downloads.html`
-  * Current and past releases for each OS
+* Community
+  * `community.html`
+    * It would be _really_ cool to have some sort of Nukipedia-like website to replace the Natron community plugins but that's a really long-term stretch goal
+    * This will likely be a link to the Pixls.us forums.
 
 * Docs
   * This one is tricky.  IMO a proper docs website should probably be a different website entirely with the nav bar from this one tacked onto it.  This isn't otherworldly difficult to do and GitHub Pages makes it pretty easy to make multiple repos look like one website in the browser but that's just my opinion.
 
 ## Building for development
 
-TODO
+This website uses Jekyll, get that [here](https://jekyllrb.com/). You'll likely want to install [rbenv](https://github.com/rbenv/rbenv) as well to manage multiple installs of Ruby on your machine, sometimes the one you have installed by default is not the version that Jekyll likes.
+
+`cd` to the git repo
+
+`bundle install` to install all the dependencies used by GitHub Pages
+
+`bundle exec jekyll serve --incremental` to start Jekyll @ localhost:4000
+
+Navigate to localhost:4000 in the browser and get to writing code!  The server will check for updates and rebuild the website every time you save a file.
