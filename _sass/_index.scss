@@ -38,6 +38,9 @@
   min-height: 45rem;
   padding: 5rem;
   margin-top: 5rem;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
 
   h3 {
     color: $natronyellow;
@@ -52,12 +55,12 @@
     padding: 0 2vw 0 2vw;
   }
 
-  .index-about-info-icons {
-    text-align: center;
-    letter-spacing: 2rem;
-    font-size: 6rem;
-    padding: 0;
-    margin-top: 4rem;
+  .index-about-osimagecontainer {
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-grow: 1;
+    display: flex;
   }
 }
 
