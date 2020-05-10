@@ -1,0 +1,33 @@
+---
+layout: default
+title: Natron
+---
+<div class="news-container">
+  <div class="row">
+    <div class="column large-10 medium-10 small-12 large-offset-1 medium-offset-1">
+      <h1 class="page-title">News</h1>
+    </div>
+  </div>
+  <section>
+      {% for post in site.posts %}
+      <article class="row">
+        <div class="news-article-info column large-2 medium-2 small-12 large-offset-1 medium-offset-1">
+          <time>{{ post.date | date_to_string }}</time>
+          <p>
+            {% for tag in post.tags%}
+            {{tag}}
+            {% endfor %}
+          </p>
+        </div>
+        <div class="news-article-brief column large-8 medium-8 small-12">
+          <h2>{{ post.title }}</h2>
+          <h3>{{ post.author }}</h3>
+          <div>
+            {{ post.description }} <a class="news-link" href="{{site.baseurl}}{{post.url}}">Read more<i class='bx bx-right-arrow-alt' ></i></a>
+          </div>
+        </div>
+      </article>
+      {% endfor %}
+  </section>
+  <div class="footer-seperator"></div>
+</div>

@@ -17,10 +17,18 @@ $natrondarkblue: darken($natronblue,35);
 $natronred: #dc1f26;
 $natronyellow: #ffbf00;
 $natrongrey: #36373b;
+$natronlightgrey: #ebeef1;
 $titlefont: 'Barlow', sans-serif;
 $bodyfont: "Noto Sans", sans-serif;
 
 // Typography
+
+.page-title {
+	color: $natronred;
+	font-family: $titlefont;
+	font-size: 3rem;
+	margin-top: 1rem;
+}
 
 .basic-paragraph {
 	font-family: $bodyfont;
