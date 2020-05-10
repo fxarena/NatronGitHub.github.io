@@ -10,6 +10,10 @@ body {
  padding: 0;
 }
 
+.wrapper {
+	min-height: 80vh;
+}
+
 // Variable Land
 
 $natronblue: #2c84ec;
@@ -38,19 +42,23 @@ $bodyfont: "Noto Sans", sans-serif;
 }
 
 a.hyperlink {
+	font-family: $bodyfont;
 	text-decoration-thickness: 0.1rem;
 	text-underline-offset: 0.3rem;
-	color: black;
+	text-decoration-color: $natronblue;
+	color: inherit;
   cursor: pointer;
 	transition-duration: 0.2s;
 }
 
-a.hyperlink-inverted:hover {
+a.hyperlink:hover {
+	color: $natronblue;
 	transition-duration: 0.2s;
 	text-underline-offset: 0.5rem;
 }
 
 a.hyperlink-inverted {
+	font-family: $bodyfont;
 	text-decoration-thickness: 0.1rem;
 	text-underline-offset: 0.3rem;
 	color: white;

@@ -1,14 +1,25 @@
 ---
 layout: default
 ---
-
-<small>{{ page.date | date: "%-d %B %Y" }}</small>
-<h1>{{ page.title }}</h1>
-
-<p class="view">by {{ page.author | default: site.author }}</p>
-
-{{content}}
-
-{% if page.tags %}
-  <small>tags: <em>{{ page.tags | join: "</em> - <em>" }}</em></small>
-{% endif %}
+<div class="row">
+  <div class="column large-6 medium-10 small-12 large-offset-3 medium-offset-1">
+    <div class="news-post-return">
+      <a class="news-link-reverse" href="{{ site.baseurl }}/news"><i class='bx bx-left-arrow-alt' ></i>Back to News</a>
+    </div>
+  </div>
+</div>
+<article class="row">
+  <div class="column large-6 medium-10 small-12 large-offset-3 medium-offset-1">
+    <small class="news-post-info">
+      <i class='bx bx-calendar' ></i> <time>{{ page.date | date: "%-d %B %Y" }}</time>
+      {% for tag in page.tags%}
+       &#8212; <i class='bx bx-purchase-tag-alt'></i> {{tag}}
+      {% endfor %}
+    </small>
+    <h1 class="news-post-title">{{ page.title }}</h1>
+    <p class="news-post-author">by {{ page.author | default: site.author }}</p>
+    <div class="news-article">
+      {{content}}
+    </div>
+  </div>
+</article>

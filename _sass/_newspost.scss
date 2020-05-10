@@ -1,0 +1,148 @@
+.news-post-return {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+
+  i {
+    position: relative;
+    top: -0.1rem;
+    vertical-align: middle;
+  }
+}
+
+.news-post-info {
+  font-family: $bodyfont;
+  font-size: 0.8rem;
+  color: $natrongrey;
+}
+
+.news-post-title {
+  font-family: $titlefont;
+  color: red;
+  font-size: 2.5rem;
+  margin-top: 0.2rem;
+  margin-bottom: 0;
+}
+
+.news-post-author {
+  font-family: $bodyfont;
+  margin-top: 1rem;
+  color: $natrongrey;
+  font-size: 1rem;
+}
+
+
+// Markdown Post Styling
+
+.news-article {
+  margin-top: 3rem;
+  margin-bottom: 6rem;
+// Text Styling
+
+  h1, h2 {
+    font-family: $titlefont;
+  }
+
+  h1 {
+    font-size: 2rem;
+    margin: 1.5rem 0 0 0;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  h3, h4, h5, h6 {
+    font-family: $titlefont;
+  }
+
+  p, strong, em, a, del {
+    font-size: 1rem;
+    font-family: $bodyfont;
+    line-height: 1.8rem;
+  }
+
+  li {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    font-family: $bodyfont;
+    font-size: 1rem;
+  }
+
+  hr{
+    border: solid;
+    border-width: 0.25rem;
+    border-color: $natrongrey;
+  }
+
+  blockquote {
+    border-left: solid;
+    border-width: 0.5rem;
+    border-color: $natronred;
+    margin-left: 7vw;
+    margin-right: 7vw;
+
+    p {
+      font-size: 1.2em;
+      line-height: 1.6rem;
+      padding: 1.2em;
+    }
+  }
+
+// Code highlighting (style located in _codehighlight.scss)
+
+  .highlighter-rouge {
+    max-height: 25rem;
+    padding: 1rem 1rem 1rem 0.5rem;
+    background-color: #272B33;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    line-height: 1.4rem;
+    overflow: scroll;
+  }
+
+  pre {
+    margin: 0;
+  }
+
+  pre.lineno {
+    text-align: right;
+    user-select: none;
+    padding-right: 0.5rem;
+    margin-right: 0.5rem;
+    border-right: solid;
+    border-color: #5c6370;
+    border-width: 0.15rem;
+  }
+
+// Link styling
+
+  a {
+    font-family: $bodyfont;
+    text-decoration-thickness: 0.1rem;
+    text-underline-offset: 0.35rem;
+    text-decoration-color: $natronblue;
+    color: inherit;
+    cursor: pointer;
+    transition-duration: 0.2s;
+  }
+
+  a:hover {
+    color: lighten($natronblue, 10);
+    transition-duration: 0.2s;
+    text-underline-offset: 0.5rem;
+  }
+
+  iframe {
+    width: 100%;
+    height: 70vh;
+    margin-bottom: 1.5rem;
+    margin-top: 1.5rem;
+  }
+
+  img {
+    width: calc(100% + 10vw);
+    margin-bottom: 1.5rem;
+    margin-top: 1.5rem;
+  }
+
+}

@@ -5,15 +5,16 @@
 .news-article-info {
   color: $natrongrey;
   font-family: $bodyfont;
-  font-size: 0.9rem;
   display: flex;
   flex-direction: column;
 
   time {
+    font-size: 0.9rem;
     margin-top: 0.6rem;
   }
 
-  p {
+  small {
+    font-size: 0.9rem;
     margin-top: 1rem;
     text-transform: capitalize;
   }
@@ -53,7 +54,7 @@
   }
 }
 
-.news-link {
+.news-link, .news-link-reverse {
   font-family: $bodyfont;
   font-size: 1rem;
   margin-top: 0;
@@ -64,6 +65,7 @@
     transition-duration: 0.1s;
     color: inherit;
     vertical-align: -0.15rem;
+    right: 0;
   }
 }
 
@@ -75,5 +77,17 @@
     padding-left: 0.2rem;
   }
 }
+
+.news-link-reverse:hover {
+  color: lighten($natronblue, 10);
+
+  i {
+    transition-duration: 0.1s;
+    right: 0.2rem;
+  }
+}
+
+
+
 
 // 0 calc(var(--basicGrid-gutter, 1.8rem) / 2)
