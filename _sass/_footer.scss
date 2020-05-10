@@ -8,17 +8,11 @@ footer {
   background-color: $natronblue;
 }
 
-@media only screen and (max-width: 640px) {
-  footer {
-    text-align: center;
-  }
-}
-
 .footer-title {
   font-family: $titlefont;
   color: $natronyellow;
-  font-size: 2rem;
-  margin: 2rem 0 2rem 0;
+  font-size: 1.5rem;
+  margin: 1rem 0 1rem 0;
 }
 
 .footer-list {

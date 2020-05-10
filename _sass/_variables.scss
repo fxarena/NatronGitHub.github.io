@@ -24,10 +24,11 @@ $bodyfont: "Noto Sans", sans-serif;
 // Typography
 
 .page-title {
-	color: $natronred;
+	color: $natronblue;
 	font-family: $titlefont;
 	font-size: 3rem;
-	margin-top: 1rem;
+	margin-top: 2rem;
+	margin-bottom: 2rem;
 }
 
 .basic-paragraph {

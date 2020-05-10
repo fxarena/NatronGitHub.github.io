@@ -4,6 +4,9 @@ nav.topnav {
   display: flex;
   align-content: space-between;
   vertical-align: middle;
+  border-bottom: solid;
+  border-width: 0.5rem;
+  border-color: $natronblue;
 }
 
 .topnav-logo {

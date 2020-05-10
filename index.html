@@ -125,7 +125,9 @@ title: Natron
         <p class="index-news-date">
           Posted on {{ post.date | date: "%B %-d, %Y" }} by {{ post.author }}
         </p>
-        <a class="news-link" href="{{site.baseurl}}{{post.url}}">Read more<i class='bx bx-right-arrow-alt' ></i></a>
+        <div class="index-news-link">
+          <a class="news-link" href="{{site.baseurl}}{{post.url}}">Read more<i class='bx bx-right-arrow-alt' ></i></a>
+        </div>
       </div>
       {% endfor %}
     </div>
