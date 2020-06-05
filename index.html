@@ -123,7 +123,7 @@ title: Natron
       <div>
         <h4><i class='bx bx-news'></i> {{ post.title }}</h4>
         <p class="index-news-date">
-          Posted on {{ post.date | date: "%B %-d, %Y" }} by {{ post.author }}
+          Posted on {{ post.date | date: "%B %-d, %Y" }} {% if post.author %} by {{ post.author }} {% endif %}
         </p>
         <div class="index-news-link">
           <a class="news-link" href="{{site.baseurl}}{{post.url}}">Read more<i class='bx bx-right-arrow-alt' ></i></a>
@@ -169,11 +169,14 @@ title: Natron
   <div class="index-getinvolved column large-5 medium-10 small-12 large-offset-0 medium-offset-0 small-offset-0">
     <h3>Get Involved</h3>
     <p class="basic-paragraph">
-      Natron is currently looking for maintainers and contributors! Instructions for building Natron yourself and contributing are available <a class="hyperlink-inverted" href="https://github.com/NatronGitHub/Natron/#contributing">on our GitHub</a>, we accept and review pull requests.
+      Natron is currently looking for developers and contributors! Instructions for building Natron yourself and contributing are available <a class="hyperlink-inverted" href="https://github.com/NatronGitHub/Natron/#contributing">on our GitHub</a>, we regularly review and accept pull requests.
     </p>
-    <h3>Join The Forum</h3>
+    <h3>Join The Community</h3>
     <p class="basic-paragraph">
       Need some help? Want to show off your work? Check out the <a class="hyperlink-inverted" href="https://discuss.pixls.us/c/software/natron">Natron forums on Pixls.us!</a>
+      <br />
+      <br />
+      Natron also has a community <a class="hyperlink-inverted" href="https://discordapp.com/invite/xWAQzPF">Discord server</a> if chat is more your thing.
     </p>
   </div>
 </section>

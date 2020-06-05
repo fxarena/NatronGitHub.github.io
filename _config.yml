@@ -1,7 +1,6 @@
 title: "Natron"
 description: Open Source Compositing Software For VFX and Motion Graphics
-url: ""
-baseurl: "/NatronGitHub.github.io"
+baseurl: "/NatronGitHub.github.io" #For preview purposes on wilkinson.graphics/NatronGitHub.github.io ONLY.  Remove once website is live.
 
 # Build settings
 sass:

@@ -9,6 +9,11 @@
   }
 }
 
+.news-post-infobox {
+  background-color: $natronlightgrey;
+  padding: 2rem;
+}
+
 .news-post-info {
   font-family: $bodyfont;
   font-size: 0.8rem;
@@ -28,14 +33,18 @@
   margin-top: 1rem;
   color: $natrongrey;
   font-size: 1rem;
+  margin-bottom: 0;
 }
 
 
 // Markdown Post Styling
 
 .news-article {
-  margin-top: 3rem;
   margin-bottom: 6rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  padding-left: 2vw;
+  padding-right: 2vw;
 // Text Styling
 
   h1, h2 {
@@ -94,7 +103,6 @@
     max-height: 25rem;
     padding: 1rem 1rem 1rem 0.5rem;
     background-color: #272B33;
-    border-radius: 0.5rem;
     font-size: 1rem;
     line-height: 1.4rem;
     overflow: scroll;
@@ -127,7 +135,7 @@
   }
 
   a:hover {
-    color: lighten($natronblue, 10);
+    color: $natronblue;
     transition-duration: 0.2s;
     text-underline-offset: 0.5rem;
   }
